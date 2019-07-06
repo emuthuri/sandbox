@@ -1,0 +1,180 @@
+@import url(http://fonts.googleapis.com/css?family=Tenor+Sans);
+html {
+  background-color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.container {
+  width: 500px;
+  height: 750px;
+  margin: 0 auto;
+}
+
+.login {
+  margin-top: 50px;
+  width: 450px;
+}
+
+.login-heading {
+  font: 1.8em/48px "Comic Sans MS", "Comic Sans", cursive;
+  color: #428484;
+  text-align:center;
+}
+
+.login-registration {
+  font: 1.8em/48px "Comic Sans MS", "Comic Sans", cursive;
+  color: #428484;
+  text-align:center;
+}
+
+input{
+	   height: 30px;
+	
+}
+
+.input-txt {
+  width: 100%;
+  padding: 20px 10px;
+  background: white;
+    border-left:solid #428484 0px;
+    border-right:solid #428484 0px;
+    border-top:solid #428484 0px;
+    border-bottom:solid #428484 1px;
+  font-size: 1em;
+  
+  color: #428484;
+  
+    -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  
+  
+}
+.input-txt:-moz-placeholder {
+  color: #428484;
+}
+.input-txt:-ms-input-placeholder {
+  color: #428484;
+}
+.input-txt::-webkit-input-placeholder {
+  color: #428484;
+}
+.input-txt:focus {
+  background-color: #ebf5f5;
+}
+
+.login-footer {
+  margin: 10px 0;
+  overlow: hidden;
+  float: left;
+  width: 100%;
+}
+
+.register-footer {
+  margin: 15px 0;
+  overlow: hidden;
+  float: left;
+  width: 100%;
+}
+
+.register-button {
+  margin: 10px 0;
+  overlow: hidden;
+  float: left;
+  width: 100%;
+}
+
+.create-account {
+  padding: 15px 180px;
+  border: none;
+  background: #428484;
+  color: #ebf5f5;
+  float: center;
+  cursor:pointer;
+}
+
+
+.btn-sign-in {
+  float: right;
+  padding: 08px 30px;
+  border: none;
+  background: #428484;
+  color: #ebf5f5;
+  cursor:pointer
+}
+
+.btn-submit {
+  float: right;
+  padding: 09px 30px;
+  border: none;
+  background: #428484;
+  color: #ebf5f5;
+  cursor:pointer
+}
+
+
+
+.icon {
+  display: inline-block;
+}
+
+.icon--min {
+  font-size: .9em;
+}
+
+.lnk {
+  font-size: .8em;
+  line-height: 3em;
+  color: white;
+  text-decoration: none;
+}
+
+/* beginnning of the flipper css*/
+
+.toregister {
+	perspective: 1000px;
+	
+}
+
+.toregister:hover .flipper, .toregister.hover .flipper {
+		transform: rotateY(180deg);
+	}
+	
+.toregister, .register-button, .back {
+	width: 450px;
+	height: 250px;
+	margin-top:40px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.8s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.register-button, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.register-button {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+/*End of flipper css */
